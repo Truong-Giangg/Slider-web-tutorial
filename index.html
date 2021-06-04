@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Range slider</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>	
+        <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class = "wrapper">
+            <div class="progress">
+                <div class="Value" id="SelectValueRed"></div>		<!-- indicate value to website-->
+                <input class="slider" type="range" min="0" max="255" value="0" id="sliderRed"> <!-- create slider-->
+                
+            </div>
+            <div class="progress">
+                <div class="Value" id="SelectValueGreen"></div>		<!-- indicate value to website-->
+                <input class="slider" type="range" min="0" max="255" value="0" id="sliderGreen"> <!-- create slider-->
+                
+            </div>
+            <div class="progress">
+                <div class="Value" id="SelectValueBlue"></div>		<!-- indicate value to website-->
+                <input class="slider" type="range" min="0" max="255" value="0" id="sliderBlue"> <!-- create slider-->
+                
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>

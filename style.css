@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    font-family: sans-serif;
+    color: #fff;
+    height: 100vh;
+}
+.wrapper{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}.progress {
+    margin: 30px auto;
+    width: 70%;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.slider{
+    -webkit-appearance:none;
+    width: 100%;
+    height: 10px;
+    outline: none;
+    border-radius: 0.25rem;
+
+    /* margin-bottom: 30px; */
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    width: 25px;
+    height: 25px;
+	background: #00ffff;
+	box-shadow: 0 0 10px #00ffff, 0 0 40px #00ffff, 0 0 80px #00ffff;
+    cursor: pointer;
+}
+.Value{ /* create the box to show the value */
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 20px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; 
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+#SelectValueRed {
+    color: red;
+}
+#SelectValueBlue {
+    color: blue;;
+}
+#SelectValueGreen  {
+    color: green;
+}
